@@ -12,6 +12,7 @@ export default {
       fontSize: {
         'header-clamp': 'clamp(1rem, 5vw, 2rem)',
         clamp: 'clamp(0.8rem, 3vw, 1.5rem)',
+        'small-clamp': 'clamp(0.5rem, 2vw, 1rem)',
       },
       backgroundImage: {
         'horizontal-background': "url('./assets/horizont-landing-page.jpg')",
