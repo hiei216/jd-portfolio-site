@@ -35,7 +35,7 @@ export const LandingPage: React.FC = () => {
                   jiri.dvorak@gmx.de
                 </a>
                 <span className="text-small-clamp font-montserrat text-white">
-                  Ahornweg 11, 85757 Karlsfeld
+                  85757 Karlsfeld, Deutschland
                 </span>
                 <a
                   href="https://www.jirkodvorak.com/"
