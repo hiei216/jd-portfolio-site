@@ -9,7 +9,7 @@ export const LandingPage: React.FC = () => {
 
   return (
     <div className="relative h-screen w-full">
-      <div className="bg-horizontal-background absolute inset-0 bg-cover bg-center brightness-50"></div>
+      <div className="absolute inset-0 bg-horizontal-background bg-cover bg-center brightness-50"></div>
       <div className="relative z-10 flex h-full">
         <LanguageSelector />
         <div className="ml-[16vw] mt-[10vw] flex flex-col">
@@ -30,16 +30,16 @@ export const LandingPage: React.FC = () => {
                 <span className="font-montserrat text-clamp text-white">Full-Stack Developer</span>
                 <a
                   href="mailto:jiri.dvorak@gmx.de"
-                  className="text-small-clamp mt-4 font-montserrat text-white"
+                  className="mt-4 font-montserrat text-small-clamp text-white"
                 >
                   jiri.dvorak@gmx.de
                 </a>
-                <span className="text-small-clamp font-montserrat text-white">
+                <span className="font-montserrat text-small-clamp text-white">
                   85757 Karlsfeld, Deutschland
                 </span>
                 <a
                   href="https://www.jirkodvorak.com/"
-                  className="hover:coursor text-small-clamp font-montserrat text-white"
+                  className="hover:coursor font-montserrat text-small-clamp text-white"
                 >
                   www.jirkodvorak.com
                 </a>
@@ -53,10 +53,10 @@ export const LandingPage: React.FC = () => {
           </div>
           <div className="mt-10 flex flex-col">
             <div className="flex flex-row">
-              <ContentButton title={PORTFOLIO_DATA[language].contact.title} />
-              <ContentButton title={PORTFOLIO_DATA[language].contact.title} />
-              <ContentButton title={PORTFOLIO_DATA[language].contact.title} />
-              <ContentButton title={PORTFOLIO_DATA[language].contact.title} />
+              <ContentButton
+                title={PORTFOLIO_DATA[language].languageSkills.header}
+                link="language-skills"
+              />
             </div>
           </div>
         </div>
