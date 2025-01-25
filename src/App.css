@@ -1,6 +1,7 @@
-#root {
+.App {
   background-color: white;
   margin-right: calc(-1 * (100vw - 100%));
+  width: 100%;
 }
 
 .content-container {

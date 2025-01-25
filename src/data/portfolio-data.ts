@@ -1,20 +1,20 @@
-export type ContactData = {
-  title: string;
-  // address: string;
-  // email: string;
-  // phoneNumber: string;
-  // website: string;
+export type LanguageSkills = {
+  language: string;
+  level: string;
 };
 
-export const ProfileData = {};
+export type LanguageData = {
+  header: string;
+  languages: LanguageSkills[];
+};
 
-export const WorkData = {};
+export type ProfileData = {};
 
-export const SkillData = {};
+export type WorkData = {};
 
-export const ProjectData = {};
+export type SkillData = {};
 
-export const LanguageData = {};
+export type ProjectData = {};
 
 export const InterestData = {};
 
@@ -22,7 +22,7 @@ export type Language = 'en' | 'de' | 'sk';
 
 interface PortfolioData {
   title: string;
-  contact: ContactData;
+  languageSkills: LanguageData;
   //   about: string[];
   //   profiles: ProfileData;
   //   work: WorkData;
@@ -37,22 +37,64 @@ export const PORTFOLIO_DATA: Record<string, PortfolioData> = {
   en: {
     title:
       'I am a passionate programmer who has over 10 years of professional experience in the insurance industry, with 4 years experience as Full-Stack developer. I am skilled in agile methodologies and React / Node.js development.',
-    contact: {
-      title: 'Contact',
+    languageSkills: {
+      header: 'Language skills',
+      languages: [
+        {
+          language: 'English',
+          level: 'fluent',
+        },
+        {
+          language: 'German',
+          level: 'fluent',
+        },
+        {
+          language: 'Slovak',
+          level: 'mother tongue',
+        },
+      ],
     },
   },
   de: {
     title:
       'Ich bin ein leidenschaftlicher Programmierer, der über 10 Jahre Berufserfahrung in der Versicherungsbranche hat, davon 4 Jahre als Full-Stack-Entwickler. Ich bin erfahren in agilen Methoden und React / Node.js Entwicklung.',
-    contact: {
-      title: 'Kontakt',
+    languageSkills: {
+      header: 'Sprachkenntnisse',
+      languages: [
+        {
+          language: 'Englisch',
+          level: 'fließend',
+        },
+        {
+          language: 'Deutsch',
+          level: 'fließend',
+        },
+        {
+          language: 'Slowakisch',
+          level: 'Muttersprache',
+        },
+      ],
     },
   },
   sk: {
     title:
       'Som vášnivý programátor, ktorý má viac ako 10 rokov profesionálnych skúseností v poisťovníctve, z toho 4 roky ako vývojár v oblasti full-stack. Mám skúsenosti s agilnými metodikami a vývojom React / Node.js.',
-    contact: {
-      title: 'Kontakt',
+    languageSkills: {
+      header: 'Jazykové znalosti',
+      languages: [
+        {
+          language: 'Nemecký jazyk',
+          level: 'pokročilý',
+        },
+        {
+          language: 'Anglický jazyk',
+          level: 'pokročilý',
+        },
+        {
+          language: 'Slovenský jazyk',
+          level: 'materinský jazyk',
+        },
+      ],
     },
   },
 };
